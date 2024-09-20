@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo transparente -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- Borde derecho (azul) -->
+    <item
+        android:right="2dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFFFFF" /> <!-- Color azul para el borde derecho -->
+        </shape>
+    </item>
+
+    <!-- Borde izquierdo (verde) -->
+    <item
+        android:left="2dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#203447" /> <!-- Color verde para el borde izquierdo -->
+        </shape>
+    </item>
+
+    <!-- Borde superior (rojo) -->
+    <item
+        android:top="2dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#203447" /> <!-- Color rojo para el borde superior -->
+        </shape>
+    </item>
+
+    <!-- Borde inferior (amarillo) -->
+    <item
+        android:bottom="2dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#203447" /> <!-- Color amarillo para el borde inferior -->
+        </shape>
+    </item>
+</layer-list>

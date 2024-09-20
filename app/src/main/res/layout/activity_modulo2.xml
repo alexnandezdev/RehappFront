@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_modulo2"
+    tools:context=".views.modulo2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/text_nombre_modulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:text="Modulo 2"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+
+
+
+        <TextView
+            android:id="@+id/textViewNombreEjercicio1_modulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:text="@string/titulo_modulo2_ejercicio1"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+
+
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/video_ejercicio1_modulo2"
+                android:layout_width="436dp"
+                android:layout_height="197dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:show_buffering="when_playing"
+                app:show_shuffle_button="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@color/white">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageNombreEjercicio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_ejercicio" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/textView_ejercicio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Ejercicio 1:"
+                            android:textSize="16sp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/text_titulo_ejercicio1_modulo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_modulo2_ejercicio1"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_descripcion_modulo2_ejercicio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    android:text="@string/descripcion_modulo2_ejercicio1"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/image_play1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/play_pantalla_completa"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/video_ejercicio2_modulo2"
+                android:layout_width="436dp"
+                android:layout_height="197dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:show_buffering="when_playing"
+                app:show_shuffle_button="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@color/white">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageNombreEjercicio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_ejercicio" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/textView_ejercicio2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="ejercicio 2:"
+                            android:textSize="16sp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/text_titulo_ejercicio2_modulo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_modulo2_ejercicio2"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_descripcion_modulo2_ejercicio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    android:text="@string/descripcion_modulo2_ejercicio2"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/image_play2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/play_pantalla_completa"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/video_ejercicio3_modulo2"
+                android:layout_width="436dp"
+                android:layout_height="197dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:show_buffering="when_playing"
+                app:show_shuffle_button="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageNombreEjercicio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_ejercicio" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_ejercicio3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="ejercicio 3:"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/text_titulo_ejercicio3_modulo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_modulo2_ejercicio3"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_descripcion_modulo2_ejercicio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    android:text="@string/descripcion_modulo2_ejercicio3"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/image_play3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/play_pantalla_completa" />
+
+
+            </LinearLayout>
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/video_ejercicio4_modulo2"
+                android:layout_width="436dp"
+                android:layout_height="197dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:show_buffering="when_playing"
+                app:show_shuffle_button="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@color/white">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/image_Ejercicio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_ejercicio" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/textView_ejercicio4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="ejercicio 4:"
+                            android:textSize="16sp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/text_titulo_ejercicio4_modulo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_modulo2_ejercicio4"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_descripcion_modulo2_ejercicio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    android:text="@string/descripcion_modulo2_ejercicio4"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/image_play4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/play_pantalla_completa"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/image_finalizar_modulo"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/finalizar_modulo"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/fondo_barranavegacion"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_home"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/ic_home" />
+
+                    <ImageButton
+                        android:id="@+id/nav_calendario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_calendario"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp" />
+
+                    <ImageButton
+                        android:id="@+id/nav_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_perfil"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/ic_perfil"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

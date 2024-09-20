@@ -1,0 +1,183 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_notificaciones"
+    tools:context=".views.Notificaciones">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/bottom_navigation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_recientes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/boton_recientes" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp"
+                    android:padding="5dp"
+                    android:background="@color/azulModulo1.2">
+
+                    <ImageView
+                        android:id="@+id/imagefoto_usuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/foto_usuario" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/textView_realizaModulosNotificaciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Realiza tus Módulos"
+                            android:textSize="17sp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textView_BienvenidaNotificaciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bienvenidos a Rehapp!"
+                            android:textSize="14sp"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@android:color/transparent">
+
+                    <ImageView
+                        android:id="@+id/imagefoto_fisio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/foto_fisioterapeuta" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFisioVirtual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Tu Fisioterapeuta Virtual!"
+                            android:textSize="16sp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textViewCompletaNotificaciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Completa tus módulos!"
+                            android:textSize="14sp"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Barra de navegación -->
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/fondo_barranavegacion"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:id="@+id/nav_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ic_home" />
+
+            <ImageButton
+                android:id="@+id/nav_calendario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendario"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ic_calendario"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+
+            <ImageButton
+                android:id="@+id/nav_Atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_atrascalendario"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ic_atras" />
+
+            <ImageButton
+                android:id="@+id/nav_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_perfil"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ic_perfil"
+                android:layout_marginLeft="40dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

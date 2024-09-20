@@ -1,0 +1,183 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_editar_fisio"
+    tools:context=".EditPerfilFisioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/fondo_editar_fisio">
+
+                <ImageView
+                    android:id="@+id/modulo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/retroceder_en_modulo" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/text_titulo_editar_paciente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar Perfil Fisioterapeuta"
+                android:textColor="@color/textColorNombreUsuario"
+                android:textSize="24sp"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="40dp"/>
+
+            <EditText
+                android:id="@+id/text_nombre_fisio"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Nombre Completo"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/text_numero_identificacion"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Número de Idenficacion"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/text_targeta_fisio"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Tarjeta Profesional"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/text_telefono_fisio"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Teléfono de Contacto"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/text_correo_fisio"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/text_edad_fisio"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Edad"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+
+            <EditText
+                android:id="@+id/text_ubicacion_fisio"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Ubicación"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/text_EditarDescripcion"
+                android:layout_width="300dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/borde_text_editar_perfil"
+                android:hint="Descripción Perfil"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+
+
+            <Button
+                android:id="@+id/ButtonEditarPaciente"
+                android:layout_width="185dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/botonGuardarEditarFisio" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

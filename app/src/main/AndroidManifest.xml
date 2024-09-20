@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icono_app"
+        android:label="Rehapp"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/icono_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rehapp_20"
+        tools:targetApi="31">
+        <activity
+            android:name=".Notificaciones_fisio"
+            android:exported="false" />
+        <activity
+            android:name=".buscar_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor34"
+            android:exported="false" />
+        <activity
+            android:name=".vista_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".mis_pacientes"
+            android:exported="false" />
+        <activity
+            android:name=".menu_fisio"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor33"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor32"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor31"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor24"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor23"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor22"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor21"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor14"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor13"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor12"
+            android:exported="false" />
+        <activity
+            android:name=".Reproductor11"
+            android:exported="false" />
+        <activity
+            android:name=".views.activity_bienvenida"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.final_modulo3"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_modulo2"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo3"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo2"
+            android:exported="false" />
+        <activity
+            android:name=".views.inicio_Fisio"
+            android:exported="false" />
+        <activity
+            android:name=".views.Calendario"
+            android:exported="false" />
+        <activity
+            android:name=".views.Notificaciones"
+            android:exported="false" />
+        <activity
+            android:name=".views.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".views.final_Modulo1"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_modulo_menu"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_Menu_Principal"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_Registro_Exitoso"
+            android:exported="false" />
+        <activity
+            android:name=".views.modulo1"
+            android:exported="false" />
+        <activity
+            android:name=".vista_fisio"
+            android:exported="false" />
+        <activity
+            android:name=".views.reproductor"
+            android:exported="false" />
+        <activity
+            android:name=".views.activity_registro_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".views.activity_registro_fisio"
+            android:exported="false" />
+        <activity
+            android:name=".perfil_fisio"
+            android:exported="false" />
+        <activity
+            android:name=".perfil_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".EditPerfilFisioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfilPacienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity_bienvenidausuario"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.activity_inicio_paciente"
+            android:exported="false" />
+    </application>
+
+</manifest>
